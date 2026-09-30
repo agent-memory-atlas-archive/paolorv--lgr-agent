@@ -9,6 +9,9 @@
 EmbodiedLGR is an agentic architecture enabling LLMs to reason over semantic-spatial information for agents deployed on robotic platforms.
 Further details may be added once the project reaches further development steps.
 
+## Notice
+This repository is outdated. The final version of LGR-agent is due to update in the AirLab laboratory's repositories.
+
 ## Launching the containers
 ### Main Agent container (ROS2+EmbodiedLGR-Agent):
 To build and launch the main container run:
