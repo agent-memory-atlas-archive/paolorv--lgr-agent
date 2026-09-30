@@ -1,4 +1,4 @@
-# EmbodiedLGR: Integrating Lightweight Graph Representation and Retrieval for Semantic-Spatial Memory in Robotic Agents
+# Lightweight Semantic-Spatial Memory in Robotic Agents
 
 [![ROS 2](https://img.shields.io/badge/ROS_2-22314E?style=flat&logo=ros&logoColor=white)](https://docs.ros.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -6,14 +6,14 @@
 [![Gazebo](https://img.shields.io/badge/Gazebo_Harmonic-FF6600?style=flat&logo=gazebo&logoColor=white)](https://gazebosim.org/)
 [![Florence-2](https://img.shields.io/badge/Florence--2-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/microsoft/Florence-2-large)
 
-EmbodiedLGR is an agentic architecture enabling LLMs to reason over semantic-spatial information for agents deployed on robotic platforms.
+LGR-Agent is an agentic architecture enabling LLMs to reason over semantic-spatial information for agents deployed on robotic platforms.
 Further details may be added once the project reaches further development steps.
 
 ## Notice
 This repository is outdated. The final version of LGR-agent is due to update in the AirLab laboratory's repositories.
 
 ## Launching the containers
-### Main Agent container (ROS2+EmbodiedLGR-Agent):
+### Main Agent container (ROS2+LGR-Agent):
 To build and launch the main container run:
 ```
 cd curiosityagent/
@@ -80,7 +80,7 @@ To allow the agent to query the vectorDB through ReMEmbR, launch the ReMEmbR req
 cd /app/
 /usr/bin/python3 remembr_server.py
 ```
-Once both memory structures are accessible, test the EmbodiedLGR-Agent by running:
+Once both memory structures are accessible, test the LGR-Agent by running:
 ```
 cd /app/
 start
@@ -126,6 +126,7 @@ Inside the main container, evaluate the agent on the cosidered sequence:
 ```
 ros2 run waffle_agent rosa_navqa_evaluator --ros-args -p sequence_id:=0 -p memory_mode:="both" -p vlm_name:="Florence2-large"
 ```
+
 
 
 
